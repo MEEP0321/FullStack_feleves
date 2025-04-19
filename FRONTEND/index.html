@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="add-person-container">
+        <label for="name">Name:</label>
+        <br>
+        <input type="text" id="name" name="name" onchange="validateForm()">
+        <br>
+        <label for="lname">Age:</label>
+        <br>
+        <input type="number" id="age" name="age" min="0" onchange="validateForm()">
+        <button disabled>Add</button>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
