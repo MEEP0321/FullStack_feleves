@@ -1,23 +1,49 @@
 let teamGeneratorOBJ = {
-    members : [],
+    players : [],
     teamNumber: 0
 }
 
+let playerInputs = document.querySelectorAll("#add-player-container input")
+let addPlayerButton = document.querySelector("#add-player-container button")
+
+let displayer = document.getElementById("players-displayer")
+
 function validateForm(){
-    let inputs = document.querySelectorAll("#add-person-container input")
-    let button = document.querySelector("#add-person-container button")
+
     let valid = true
 
-    for (let i = 0; i < inputs.length; i++) {
-        if(inputs[i].value.trim() == ""){
+    for (let i = 0; i < playerInputs.length; i++) {
+        if(playerInputs[i].value.trim() == ""){
             valid = false
         }
     }
 
     if(valid){
-        button.disabled = false
+        addPlayerButton.disabled = false
     }
     else{
-        button.disabled = true
+        addPlayerButton.disabled = true
+    }
+}
+
+function addPlayer(){
+    teamGeneratorOBJ.players.push({name: playerInputs[0].value, age: playerInputs[1].value})
+
+    for (let i = 0; i < playerInputs.length; i++) {
+        playerInputs[i].value = ""
+    }
+
+    addPlayerButton.disabled = true
+
+    displayPlayers()
+}
+
+function displayPlayers(){
+    displayer.innerHTML = ""
+
+    for (let i = 0; i < teamGeneratorOBJ.players.length; i++) {
+        let p = document.createElement("p")
+        p.innerHTML = teamGeneratorOBJ.players[i].name + " | " + teamGeneratorOBJ.players[i].age 
+        displayer.appendChild(p)
     }
 }

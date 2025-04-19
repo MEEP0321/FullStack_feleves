@@ -9,16 +9,28 @@
 </head>
 
 <body>
-    <div id="add-person-container">
+    <div id="add-player-container">
         <label for="name">Name:</label>
         <br>
         <input type="text" id="name" name="name" onchange="validateForm()">
         <br>
-        <label for="lname">Age:</label>
+        <label for="age">Age:</label>
         <br>
         <input type="number" id="age" name="age" min="0" onchange="validateForm()">
-        <button disabled>Add</button>
+        <button disabled onclick="addPlayer()">Add</button>
     </div>
+
+    <div id="players-displayer">
+
+    </div>
+
+    <div id="number-of-teams-container">
+        <label for="teamNumber">Number of teams:</label>
+        <br>
+        <input type="number" id="teamNumber" name="teamNumber" min="0">
+        <button>Create teams</button>
+    </div>
+
 
 
     <script src="main.js"></script>
