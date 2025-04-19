@@ -5,6 +5,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{5470940C-0A68-4EDC-9D3E-547E2561BC09}|BACKEND\\BACKEND.csproj|c:\\users\\attila\\fullstack\\csapatsorsolo_djlwqb_polyak\\backend\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5470940C-0A68-4EDC-9D3E-547E2561BC09}|BACKEND\\BACKEND.csproj|solutionrelative:backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5470940C-0A68-4EDC-9D3E-547E2561BC09}|BACKEND\\BACKEND.csproj|c:\\users\\attila\\fullstack\\csapatsorsolo_djlwqb_polyak\\backend\\backend\\models\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5470940C-0A68-4EDC-9D3E-547E2561BC09}|BACKEND\\BACKEND.csproj|solutionrelative:backend\\models\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5470940C-0A68-4EDC-9D3E-547E2561BC09}|BACKEND\\BACKEND.csproj|c:\\users\\attila\\fullstack\\csapatsorsolo_djlwqb_polyak\\backend\\backend\\models\\teamgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5470940C-0A68-4EDC-9D3E-547E2561BC09}|BACKEND\\BACKEND.csproj|solutionrelative:backend\\models\\teamgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,11 +22,37 @@
       "DocumentGroups": [
         {
           "DockedHeight": 370,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TeamGenerator.cs",
+              "DocumentMoniker": "C:\\Users\\Attila\\FullStack\\CSAPATSORSOLO_DJLWQB_POLYAK\\BACKEND\\BACKEND\\Models\\TeamGenerator.cs",
+              "RelativeDocumentMoniker": "BACKEND\\Models\\TeamGenerator.cs",
+              "ToolTip": "C:\\Users\\Attila\\FullStack\\CSAPATSORSOLO_DJLWQB_POLYAK\\BACKEND\\BACKEND\\Models\\TeamGenerator.cs",
+              "RelativeToolTip": "BACKEND\\Models\\TeamGenerator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-19T17:55:49.508Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Player.cs",
+              "DocumentMoniker": "C:\\Users\\Attila\\FullStack\\CSAPATSORSOLO_DJLWQB_POLYAK\\BACKEND\\BACKEND\\Models\\Player.cs",
+              "RelativeDocumentMoniker": "BACKEND\\Models\\Player.cs",
+              "ToolTip": "C:\\Users\\Attila\\FullStack\\CSAPATSORSOLO_DJLWQB_POLYAK\\BACKEND\\BACKEND\\Models\\Player.cs",
+              "RelativeToolTip": "BACKEND\\Models\\Player.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-19T17:36:14.712Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
