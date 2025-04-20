@@ -15,19 +15,19 @@
 
 <body>
     <div>
-        <div>
+        <div class="header"">
             <h1>Csapatsorsoló</h1>
         </div>
 
         <div id="add-player-container">
             <div class="">
-                <input type="text" placeholder="Name" onkeyup="validateForm()">
+                <input type="text" placeholder="Name" class="rounded" onkeyup="validateForm()">
             </div>
             <div class="">
-                <input type="number" min="0" placeholder="Age" onchange="validateForm()" onkeyup="validateForm()">
+                <input type="number" min="0" placeholder="Age" class="rounded" onchange="validateForm()" onkeyup="validateForm()">
             </div>
             <div class="">
-                <button disabled onclick="addPlayer()">Add</button>
+                <button disabled onclick="addPlayer()" class="btn btn-primary">Játékos hozzáadása</button>
             </div>
         </div>
 

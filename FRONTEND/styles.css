@@ -16,9 +16,18 @@ body {
     margin: 10px;
 }
 
+
 #number-of-teams-container {
     background-color: blueviolet;
     height: 150px;
 }
 
 #cards-containerr {}
+
+.header {
+    padding: 25px;
+    text-align: center;
+    background: #99BC85;
+    color: white;
+    font-size: 30px;
+  }
