@@ -20,14 +20,15 @@
         </div>
 
         <div id="add-player-container">
-            <div class="">
+            <div>
                 <input type="text" placeholder="Név" class="rounded form-control" onkeyup="validateForm()">
             </div>
-            <div class="">
-                <input type="number" min="0" placeholder="Kor" class="rounded form-control" onchange="validateForm()" onkeyup="validateForm()">
+            <div>
+                <input type="number" min="0" placeholder="Kor" class="rounded form-control" onchange="validateForm()"
+                    onkeyup="validateForm()">
             </div>
-            <div class="">
-                <button disabled onclick="addPlayer()" class="btn btn-primary">Játékos hozzáadása</button>
+            <div>
+                <button disabled onclick="addPlayer()" class="btn btn-dark">Játékos hozzáadása</button>
             </div>
         </div>
 
@@ -38,15 +39,16 @@
             </div>
         </div>
 
-        <div>
-            <div id="number-of-teams-container">
-                <label for="teamNumber">Number of teams:</label>
-                <br>
-                <input type="number" id="teamNumber" name="teamNumber" min="0" value="1">
-                <button onclick="createTeams()" disabled>Create teams</button>
+        <div id="number-of-teams-container">
+            <h5>Csapatok száma:</h5>
+            <div>
+                <input type="number" min="1" placeholder="Csapatok száma" value="1">
+            </div>
+            <div>
+                <button onclick="createTeams()" class="btn btn-primary" disabled>Create teams</button>
             </div>
         </div>
-
+        <hr>
         <div>
             <div id="cards-container">
 

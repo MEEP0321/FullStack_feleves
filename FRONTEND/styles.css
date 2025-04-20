@@ -34,11 +34,25 @@ body {
 
 
 #number-of-teams-container {
-    background-color: blueviolet;
-    height: 150px;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-#cards-containerr {}
+#number-of-teams-container input{
+    width: 100px;
+    text-align: center;
+}
+
+
+#cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 10px;
+}
 
 .header {
     padding: 25px;

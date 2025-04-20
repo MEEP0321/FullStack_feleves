@@ -50,8 +50,7 @@
               "RelativeToolTip": "BACKEND\\Data\\ITeamGeneratorRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-20T09:20:39.131Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-20T09:20:39.131Z"
             },
             {
               "$type": "Document",
@@ -63,8 +62,7 @@
               "RelativeToolTip": "BACKEND\\Models\\TemGenereator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-20T09:17:53.393Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-20T09:17:53.393Z"
             },
             {
               "$type": "Document",
@@ -76,8 +74,7 @@
               "RelativeToolTip": "BACKEND\\Data\\TeamGeneratorRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-20T05:06:13.199Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-20T05:06:13.199Z"
             },
             {
               "$type": "Document",
@@ -87,7 +84,7 @@
               "RelativeDocumentMoniker": "BACKEND\\Controllers\\Teams.cs",
               "ToolTip": "C:\\Users\\Attila\\FullStack\\CSAPATSORSOLO_DJLWQB_POLYAK\\BACKEND\\BACKEND\\Controllers\\Teams.cs",
               "RelativeToolTip": "BACKEND\\Controllers\\Teams.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAkwBUAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAswBUAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-19T20:51:41.299Z",
               "EditorCaption": ""
@@ -102,8 +99,7 @@
               "RelativeToolTip": "BACKEND\\Models\\Player.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-19T17:36:14.712Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-19T17:36:14.712Z"
             },
             {
               "$type": "Document",
@@ -115,8 +111,7 @@
               "RelativeToolTip": "BACKEND\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-19T15:57:40.759Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-19T15:57:40.759Z"
             }
           ]
         }
