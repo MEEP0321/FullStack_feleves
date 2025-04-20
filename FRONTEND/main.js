@@ -63,7 +63,10 @@ function generateCards(){
     })
     .then(resp => resp.json())
     .then(data => {
- 
+        let cardDisplayer = document.getElementById("cards-container")
+        for (let i = 0; i < data.length; i++) {
+            cardDisplayer.appendChild(createCard("Team " + (i+1), data[i]))
+        }
     });
 }
 
@@ -72,6 +75,10 @@ function createCard(teamName, teamMembers){
     let cardHeader = document.createElement("div")
     let cardBody = document.createElement("div")
 
+    cardDiv.classList.add("card")
+
+
+    cardHeader.classList.add("card-header")
     cardHeader.innerHTML = teamName
 
     cardBody.classList.add("card-body")
