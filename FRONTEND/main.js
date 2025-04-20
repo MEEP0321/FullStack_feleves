@@ -76,6 +76,8 @@ function createCard(teamName, teamMembers){
     let cardBody = document.createElement("div")
 
     cardDiv.classList.add("card")
+    cardDiv.style.flexBasis = "18rem"
+    cardDiv.style.backgroundColor = random_bg_color()
 
 
     cardHeader.classList.add("card-header")
