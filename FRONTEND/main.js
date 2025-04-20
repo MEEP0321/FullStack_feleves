@@ -1,10 +1,6 @@
 let teamGeneratorOBJ = {
-    players : [
-        {name: "teszt", age: 40},
-        {name: "teszt2", age: 42},
-        {name: "teszt3", age: 43}
-    ],
-    numberOfTeams: 2
+    players : [],
+    numberOfTeams: 1
 }
 
 let playerInputs = document.querySelectorAll("#add-player-container input")
@@ -38,6 +34,7 @@ function addPlayer(){
     }
 
     addPlayerButton.disabled = true
+    document.querySelector("#number-of-teams-container button").disabled = false
 
     displayPlayers()
 }
@@ -52,15 +49,16 @@ function displayPlayers(){
     }
 }
 
-function test(){
-    teamGeneratorOBJ.teamNumber = document.querySelector("#number-of-teams-container input").value
-
+function createTeams(){
+    teamGeneratorOBJ.numberOfTeams = document.querySelector("#number-of-teams-container input").value
     console.log(JSON.stringify(teamGeneratorOBJ))
 }
 
+
+/*
 function test2(){
     fetch('http://localhost:5149/api/Teams/', {
-        method: 'GET',
+        method: 'POST',
         headers: { 'Content-Type' : 'application/json', },
         body: JSON.stringify(teamGeneratorOBJ)
     })
@@ -70,16 +68,8 @@ function test2(){
     .catch(error => console.log(error))
 }
 
+*/
 
-fetch('http://localhost:5149/api/Teams/', {
-    method: 'POST',
-    headers: { 'Content-Type' : 'application/json', },
-    body: JSON.stringify(teamGeneratorOBJ)
-})
-.then(resp => {
-    console.log('Response: ', resp)
-})
-.catch(error => console.log(error))
 
 
 

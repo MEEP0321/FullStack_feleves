@@ -12,11 +12,11 @@
     <div id="add-player-container">
         <label for="name">Name:</label>
         <br>
-        <input type="text" id="name" name="name" onchange="validateForm()">
+        <input type="text" id="name" name="name" onkeyup="validateForm()">
         <br>
         <label for="age">Age:</label>
         <br>
-        <input type="number" id="age" name="age" min="0" onchange="validateForm()">
+        <input type="number" id="age" name="age" min="0" onchange="validateForm()" onkeyup="validateForm()">
         <button disabled onclick="addPlayer()">Add</button>
     </div>
 
@@ -27,10 +27,11 @@
     <div id="number-of-teams-container">
         <label for="teamNumber">Number of teams:</label>
         <br>
-        <input type="number" id="teamNumber" name="teamNumber" min="0">
-        <button onclick="test()">Create teams</button>
-        <button onclick="test2()">Post test</button>
+        <input type="number" id="teamNumber" name="teamNumber" min="0" value="1">
+        <button onclick="createTeams()" disabled>Create teams</button>
     </div>
+
+
 
 
 
