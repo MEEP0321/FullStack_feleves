@@ -2,18 +2,23 @@ body {
     background-color: #FAF1E6;
 }
 
-#add-player-container{
-    margin: ;
+#add-player-container {
+    margin: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 10px
 }
 
-#add-player-container{
-
+#players-displayer {
+    background-color: aqua;
+    height: 200px;
+    border-radius: 25px;
+    margin: 10px;
 }
 
-#add-player-container{
-
+#number-of-teams-container {
+    background-color: blueviolet;
+    height: 150px;
 }
 
-#add-player-container{
-
-}
+#cards-containerr {}

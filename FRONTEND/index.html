@@ -14,27 +14,31 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="row">
-            <div id="add-player-container">
-                <label for="name">Name:</label>
-                <br>
-                <input type="text" onkeyup="validateForm()">
-                <br>
-                <label for="age">Age:</label>
-                <br>
-                <input type="number" min="0" onchange="validateForm()" onkeyup="validateForm()">
+    <div>
+        <div>
+            <h1>Csapatsorsoló</h1>
+        </div>
+
+        <div id="add-player-container">
+            <div class="">
+                <input type="text" placeholder="Name" onkeyup="validateForm()">
+            </div>
+            <div class="">
+                <input type="number" min="0" placeholder="Age" onchange="validateForm()" onkeyup="validateForm()">
+            </div>
+            <div class="">
                 <button disabled onclick="addPlayer()">Add</button>
             </div>
         </div>
 
-        <div class="row">
+        <div>
+            <h3>A jatékosok:</h3>
             <div id="players-displayer">
 
             </div>
         </div>
 
-        <div class="row">
+        <div>
             <div id="number-of-teams-container">
                 <label for="teamNumber">Number of teams:</label>
                 <br>
@@ -43,7 +47,7 @@
             </div>
         </div>
 
-        <div class="row">
+        <div>
             <div id="cards-container">
 
             </div>
