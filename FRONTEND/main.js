@@ -44,7 +44,7 @@ function displayPlayers(){
 
     for (let i = 0; i < teamGeneratorOBJ.players.length; i++) {
         let p = document.createElement("p")
-        p.innerHTML = teamGeneratorOBJ.players[i].name + " | " + teamGeneratorOBJ.players[i].age 
+        p.innerHTML = teamGeneratorOBJ.players[i].name + " " + teamGeneratorOBJ.players[i].age 
         displayer.appendChild(p)
     }
 }
@@ -66,22 +66,6 @@ function generateCards(){
         console.log(data)
     });
 }
-
-
-/*
-function test2(){
-    fetch('http://localhost:5149/api/Teams/', {
-        method: 'POST',
-        headers: { 'Content-Type' : 'application/json', },
-        body: JSON.stringify(teamGeneratorOBJ)
-    })
-    .then(resp => {
-        console.log('Response: ', resp)
-    })
-    .catch(error => console.log(error))
-}
-
-*/
 
 
 
