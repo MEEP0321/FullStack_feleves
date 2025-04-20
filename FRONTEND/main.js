@@ -67,6 +67,25 @@ function generateCards(){
     });
 }
 
+function createCard(teamName, teamMembers){
+    let cardDiv = document.createElement("div")
+    let cardHeader = document.createElement("div")
+    let cardBody = document.createElement("div")
+
+    cardHeader.innerHTML = teamName
+
+    cardBody.classList.add("card-body")
+    for (let i = 0; i < teamMembers.length; i++) {
+        let p = document.createElement("p")
+        p.innerHTML = teamMembers[i].name + " " + teamMembers[i].age
+        cardBody.appendChild(p)
+    }
+
+    cardDiv.appendChild(cardHeader)
+    cardDiv.appendChild(cardBody)
+
+    return cardDiv
+}
 
 function random_bg_color() {
     // Generate random values for red, green, and blue components between 0 and 255.
