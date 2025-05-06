@@ -1,3 +1,4 @@
+//Ezt az objektumot küédöm API-n
 let teamGeneratorOBJ = {
     players : [],
     numberOfTeams: 1
@@ -8,10 +9,12 @@ let addPlayerButton = document.querySelector("#add-player-container button")
 
 let displayer = document.getElementById("players-displayer")
 
+//Validácó
 function validateForm(){
 
     let valid = true
 
+    //Ellenőrzi, hogy az inputok nem üresek-e
     for (let i = 0; i < playerInputs.length; i++) {
         if(playerInputs[i].value.trim() == ""){
             valid = false
@@ -26,9 +29,12 @@ function validateForm(){
     }
 }
 
+//Játékost hozzáadása
 function addPlayer(){
+    //Hozzá adja a játékost az objektumhoz.
     teamGeneratorOBJ.players.push({name: playerInputs[0].value, age: playerInputs[1].value})
 
+    //Törli az input mezők értékét
     for (let i = 0; i < playerInputs.length; i++) {
         playerInputs[i].value = ""
     }
@@ -39,9 +45,12 @@ function addPlayer(){
     displayPlayers()
 }
 
+//Játékosok megjelenítése
 function displayPlayers(){
+    //Törli a játékosokat, hogy a megjelenítést újra kezdje
     displayer.innerHTML = ""
 
+    //Megjeleníti a játékosokat
     for (let i = 0; i < teamGeneratorOBJ.players.length; i++) {
         let p = document.createElement("p")
         p.innerHTML = teamGeneratorOBJ.players[i].name + " " + teamGeneratorOBJ.players[i].age 
@@ -49,12 +58,15 @@ function displayPlayers(){
     }
 }
 
+//Csapatok generálása
 function createTeams(){
+    //Megadja a csapatok számát az objektumba
     teamGeneratorOBJ.numberOfTeams = document.querySelector("#number-of-teams-container input").value
 
     generateCards()
 }
 
+//Szétosztott csapatok lekérése API-ból
 function generateCards(){
     fetch('http://localhost:5149/api/Teams/', {
         method: 'POST',
@@ -70,6 +82,7 @@ function generateCards(){
     });
 }
 
+//Csapatkártya generálása
 function createCard(teamName, teamMembers){
     let cardDiv = document.createElement("div")
     let cardHeader = document.createElement("div")
