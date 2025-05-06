@@ -16,11 +16,11 @@ function validateForm(){
 
     //Ellenőrzi, hogy az inputok nem üresek-e
     for (let i = 0; i < playerInputs.length; i++) {
-        if(playerInputs[i].value.trim() == ""){
+        if(playerInputs[i].value.trim() == "" || document.querySelector("#add-player-container input[type='number']").value < 1){
             valid = false
         }
     }
-
+    
     if(valid){
         addPlayerButton.disabled = false
     }
@@ -60,10 +60,16 @@ function displayPlayers(){
 
 //Csapatok generálása
 function createTeams(){
+    let teamNumber = document.querySelector("#number-of-teams-container input").value
     //Megadja a csapatok számát az objektumba
-    teamGeneratorOBJ.numberOfTeams = document.querySelector("#number-of-teams-container input").value
+    teamGeneratorOBJ.numberOfTeams = teamNumber
 
-    generateCards()
+    if(teamNumber > teamGeneratorOBJ.players.length){
+        alert("A csapatok száma nem haladhatja meg a játékosok számát!")
+    }
+    else{
+        generateCards()
+    }
 }
 
 //Szétosztott csapatok lekérése API-ból
