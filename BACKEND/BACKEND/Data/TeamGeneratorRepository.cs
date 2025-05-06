@@ -13,8 +13,10 @@ namespace BACKEND.Data
         {
             TeamGenerator tg = teamGenerator;
 
+            //Csapatokat tartalmazó lista
             List<List<Player>> Teams = new List<List<Player>>();
 
+            //Annyi listát ad hozzá amennyi csapat van
             for (int i = 0; i < tg.NumberOfTeams; i++)
             {
                 List<Player> singleTeam = new List<Player>();
@@ -22,8 +24,10 @@ namespace BACKEND.Data
                 Teams.Add(singleTeam);
             }
 
+            //Sorba rakja a játékosokaz
             tg.Players = tg.Players.OrderBy(x => x.Age).ToList();
 
+            //Csapatba sorolás
             for (int i = 0; i < tg.Players.Count; i++)
             {
                 Teams[i%tg.NumberOfTeams].Add(tg.Players[i]);

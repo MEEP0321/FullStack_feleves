@@ -15,10 +15,11 @@ namespace BACKEND.Controllers
             this.repo = repo;
         }
 
-
+        //API post
         [HttpPost]
         public IEnumerable<IEnumerable<Player>> Addplayer([FromBody] TeamGenerator tg)
         {
+            //Response-ba vissza is adja a generált csapatokat
             return repo.GenerateTeams(tg);
         }
 
