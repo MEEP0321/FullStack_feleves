@@ -1,6 +1,11 @@
-Full-stack szoftverfejlesztés tárgyhoz féléves beadandó feladat.
+<p> Full-stack szoftverfejlesztés tárgyhoz féléves beadandó feladat. <br>
 Felhasznált technológiák:
-    - HTML
-    - CSS
-    - Javascript
-    - REST API
+</p> 
+<ul>
+<li>HTML</li>
+<li>CSS</li>
+<li>Javascript</li>
+<li>REST API</li>
+    
+</ul>
+ 
